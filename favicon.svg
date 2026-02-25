@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Dark background -->
+  <rect width="32" height="32" rx="7" fill="#08080f"/>
+
+  <!-- Pink left angle bracket -->
+  <text x="1" y="23" font-family="monospace" font-weight="900" font-size="18" fill="#ff2d78">&lt;</text>
+
+  <!-- RS initials in yellow -->
+  <text x="9" y="23" font-family="monospace" font-weight="900" font-size="14" fill="#ffe600">RS</text>
+
+  <!-- Pink right angle bracket + slash -->
+  <text x="22" y="23" font-family="monospace" font-weight="900" font-size="18" fill="#ff2d78">/&gt;</text>
+</svg>
