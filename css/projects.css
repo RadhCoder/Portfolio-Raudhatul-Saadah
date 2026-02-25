@@ -1,0 +1,545 @@
+/* =============================================
+   PROJECTS PAGE STYLES
+   ============================================= */
+
+/* PAGE HEADER */
+.page-header {
+    padding: 8rem 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 50% 70% at 0% 50%, rgba(162, 89, 255, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 100% 30%, rgba(0, 229, 255, 0.07) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* FILTER BUTTONS */
+.filter-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.filter-btn {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 1.1rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--muted2);
+    border-radius: 100px;
+    transition: all 0.25s;
+}
+
+.filter-btn:hover {
+    border-color: var(--purple);
+    color: var(--purple);
+    background: rgba(162, 89, 255, 0.08);
+}
+
+.filter-btn.active {
+    background: var(--pink);
+    border-color: var(--pink);
+    color: white;
+}
+
+/* PROJECTS MAIN */
+.projects-main {
+    padding: 3rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ─── SECTION DIVIDER HEADER ─── */
+.projects-section-header {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.projects-section-header:first-child {
+    margin-top: 0;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    border-left: 3px solid var(--pink);
+}
+
+.section-divider-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.section-divider-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    flex: 1;
+}
+
+.section-divider-count {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+    letter-spacing: 0.06em;
+}
+
+/* Hide section headers when filtering hides all their cards */
+.projects-section-header.hidden {
+    display: none;
+}
+
+/* PROJECT CARD */
+.project-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover {
+    border-color: rgba(255, 45, 120, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+/* PROJECT IMAGE PANEL */
+.project-img {
+    position: relative;
+    background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.project-img-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.proj-icon {
+    font-size: 3.5rem;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.4));
+}
+
+.proj-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.project-badges {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.proj-badge {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    padding: 0.22rem 0.55rem;
+    border-radius: 100px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+/* Badge colour variants */
+.badge-featured {
+    background: rgba(255, 230, 0, 0.2);
+    color: var(--yellow);
+    border: 1px solid rgba(255, 230, 0, 0.4);
+}
+
+.badge-fyp {
+    background: rgba(255, 45, 120, 0.2);
+    color: var(--pink);
+    border: 1px solid rgba(255, 45, 120, 0.4);
+}
+
+.badge-course {
+    background: rgba(162, 89, 255, 0.2);
+    color: var(--purple);
+    border: 1px solid rgba(162, 89, 255, 0.4);
+}
+
+.badge-internship {
+    background: rgba(0, 229, 255, 0.15);
+    color: var(--cyan);
+    border: 1px solid rgba(0, 229, 255, 0.35);
+}
+
+.badge-web {
+    background: rgba(0, 255, 136, 0.12);
+    color: var(--green);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+}
+
+.badge-desktop {
+    background: rgba(0, 229, 255, 0.12);
+    color: var(--cyan);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+}
+
+.badge-ml {
+    background: rgba(255, 107, 0, 0.15);
+    color: var(--orange);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.badge-mobile {
+    background: rgba(255, 230, 0, 0.12);
+    color: var(--yellow);
+    border: 1px solid rgba(255, 230, 0, 0.3);
+}
+
+.badge-qa {
+    background: rgba(0, 255, 136, 0.12);
+    color: var(--green);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+}
+
+/* PROJECT BODY */
+.project-body {
+    padding: 1.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.project-number {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    color: var(--pink);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+.project-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-top: -0.4rem;
+}
+
+/* ─── ISR (Issue / Solution / Result) BLOCK ─── */
+.project-isr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+}
+
+.isr-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.isr-item+.isr-item {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.isr-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.isr-item p {
+    font-size: 0.82rem;
+    color: var(--muted2);
+    line-height: 1.65;
+}
+
+.isr-result .isr-label {
+    color: var(--green);
+}
+
+.isr-result p {
+    color: rgba(240, 240, 255, 0.75);
+}
+
+/* META GRID */
+.project-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    padding: 0.85rem 1rem;
+    background: var(--surface2);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+}
+
+.meta-key {
+    font-family: var(--font-mono);
+    font-size: 0.56rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.meta-val {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* TECH BADGES */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-badge {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    padding: 0.28rem 0.65rem;
+    background: rgba(162, 89, 255, 0.1);
+    border: 1px solid rgba(162, 89, 255, 0.2);
+    color: var(--purple);
+    border-radius: 6px;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+}
+
+.tech-badge:hover {
+    background: rgba(162, 89, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* PROJECT LINKS */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 0.25rem;
+}
+
+.proj-link {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+}
+
+/* CTA SECTION */
+.projects-cta {
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.projects-cta p {
+    color: var(--muted2);
+    font-size: 1.05rem;
+}
+
+/* ================================================
+   PROJECTS RESPONSIVE
+   ================================================ */
+
+@media (max-width: 1024px) {
+    .page-header {
+        padding: 7rem 2rem 3rem;
+    }
+
+    .projects-main {
+        padding: 2.5rem 2rem 2rem;
+    }
+
+    .project-card {
+        grid-template-columns: 240px 1fr;
+    }
+
+    .projects-cta {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 6.5rem 1.5rem 2.5rem;
+    }
+
+    .projects-main {
+        padding: 2rem 1.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-img {
+        min-height: 180px;
+    }
+
+    .project-body {
+        padding: 1.4rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .section-divider {
+        padding: 0.85rem 1.1rem;
+    }
+
+    .section-divider-label {
+        font-size: 0.9rem;
+    }
+
+    .projects-cta {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 5.5rem 1rem 2rem;
+    }
+
+    .projects-main {
+        padding: 1.5rem 1rem 1rem;
+        gap: 1.2rem;
+    }
+
+    .project-img {
+        min-height: 150px;
+    }
+
+    .proj-icon {
+        font-size: 2.8rem;
+    }
+
+    .project-body {
+        padding: 1.1rem 1rem;
+        gap: 0.7rem;
+    }
+
+    .project-title {
+        font-size: 1.05rem;
+    }
+
+    .project-isr {
+        padding: 0.85rem 0.9rem;
+    }
+
+    .isr-item p {
+        font-size: 0.78rem;
+    }
+
+    .project-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .tech-badge {
+        font-size: 0.6rem;
+    }
+
+    .proj-link {
+        font-size: 0.76rem;
+        padding: 0.5rem 0.9rem;
+    }
+
+    .filter-btn {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.85rem;
+    }
+
+    .section-divider {
+        gap: 0.7rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .section-divider-label {
+        font-size: 0.82rem;
+    }
+
+    .section-divider-count {
+        display: none;
+    }
+
+    .projects-cta {
+        padding: 1.5rem 1rem;
+    }
+}

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Raudhatul Saadah</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+    <div class="progress-bar"></div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html" class="nav-logo">&lt;<span>RS</span>.dev /&gt;</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="page-header-content">
+            <div class="section-label">My Work</div>
+            <h1 class="section-title">Featured <span class="grad">Projects</span></h1>
+            <p class="section-desc">
+                A curated collection of university and internship projects — spanning full-stack web systems,
+                AR platforms, machine learning, mobile apps, and software quality assurance.
+            </p>
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="fyp">Final Year Project</button>
+                <button class="filter-btn" data-filter="course">Course Project</button>
+                <button class="filter-btn" data-filter="internship">Internship</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PROJECTS MAIN ===== -->
+    <main class="projects-main">
+
+        <!-- ─── SECTION HEADER: UNIVERSITY ─── -->
+        <div class="projects-section-header reveal">
+            <div class="section-divider">
+                <span class="section-divider-icon">🎓</span>
+                <span class="section-divider-label">University Projects</span>
+                <span class="section-divider-count">5 projects</span>
+            </div>
+        </div>
+
+        <!-- U1: NESTAWI NEXUS -->
+        <article class="project-card reveal" data-category="fyp" style="transition-delay:0.05s">
+            <div class="project-img" style="--grad-a: #ff2d78; --grad-b: #a259ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">🌐</div>
+                    <div class="proj-label">FYP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-featured">⭐ Featured</span>
+                    <span class="proj-badge badge-fyp">Final Year Project</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">UNIVERSITY — 01</div>
+                <h2 class="project-title">Nestawi Nexus</h2>
+                <p class="project-subtitle">Interactive Jawi Learning Platform with Augmented Reality</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Many primary school students face difficulty learning Jawi due to lack of engaging,
+                            interactive digital learning tools, resulting in low motivation and weak literacy retention.
+                        </p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed a web-based interactive learning platform using HTML, PHP, Laravel, and MySQL,
+                            integrated with Augmented Reality (AR) using C# to display 3D models. Features interactive
+                            notes, quizzes, storytelling, and gamified learning.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Improved student engagement and motivation. Early user testing showed increased vocabulary
+                            retention, better recall, and more active participation compared to traditional methods.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Final Year Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Lead Developer / UI/UX Designer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Year</span>
+                        <span class="meta-val">2024 – 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Web + Augmented Reality</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">Unity</span>
+                    <span class="tech-badge">Vuforia</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/MaisheK/Nestawi-Nexus" target="_blank"
+                        class="btn btn-pink proj-link">Website GitHub ↗</a>
+                    <a href="https://github.com/MaisheK/nexus-ar-image-tracking" target="_blank"
+                        class="btn btn-pink proj-link">AR GitHub ↗</a>
+                    <a href="https://www.youtube.com/watch?v=QuoxQ0Cuing" target="_blank"
+                        class="btn btn-outline proj-link">Live Demo ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- U2: GROCERY STORE -->
+        <article class="project-card reveal" data-category="course" style="transition-delay:0.1s">
+            <div class="project-img" style="--grad-a: #00e5ff; --grad-b: #a259ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">🛒</div>
+                    <div class="proj-label">COURSE</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-course">Course Project</span>
+                    <span class="proj-badge badge-desktop">Desktop App</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">UNIVERSITY — 02</div>
+                <h2 class="project-title">Grocery Store Management System</h2>
+                <p class="project-subtitle">Desktop Application Development</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Manual inventory and sales tracking caused data inconsistencies, inefficient record
+                            management, and difficulty monitoring stock and transactions.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed a desktop-based management system using C#, .NET, ASP.NET, and SQL Server,
+                            implementing CRUD operations, real-time inventory updates, and structured database
+                            management.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Improved operational efficiency by enabling faster inventory tracking, reducing data entry
+                            errors, and providing more accurate and reliable transaction records.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Course Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Module</span>
+                        <span class="meta-val">Desktop Application Development</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Desktop Application</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Developer</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">.NET</span>
+                    <span class="tech-badge">ASP.NET</span>
+                    <span class="tech-badge">SQL Server</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/RadhCoder/Grocery-Store-Management-System" target="_blank"
+                        class="btn btn-pink proj-link">GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- U3: TENSORFLOW -->
+        <article class="project-card reveal" data-category="course" style="transition-delay:0.15s">
+            <div class="project-img" style="--grad-a: #ff6b00; --grad-b: #ffe600;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">🤖</div>
+                    <div class="proj-label">COURSE</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-course">Course Project</span>
+                    <span class="proj-badge badge-ml">Machine Learning</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">UNIVERSITY — 03</div>
+                <h2 class="project-title">Data Training & Analysis</h2>
+                <p class="project-subtitle">Machine Learning with TensorFlow & Pandas</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Raw datasets lacked structure and meaningful insights, making it difficult to perform
+                            analysis and extract useful patterns for decision-making.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Used Python, Pandas, and TensorFlow to clean and preprocess data, train machine learning
+                            models, and generate predictive analysis and data visualizations.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Produced meaningful predictions and visual insights, improving data interpretation and
+                            demonstrating the effectiveness of ML for data-driven decision making.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Course Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Module</span>
+                        <span class="meta-val">Machine Learning</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Data Science / ML</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Developer / Analyst</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Matplotlib</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/RadhCoder/rabbit-classification" target="_blank"
+                        class="btn btn-pink proj-link">GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- U4: PHARMACY -->
+        <article class="project-card reveal" data-category="course" style="transition-delay:0.2s">
+            <div class="project-img" style="--grad-a: #00ff88; --grad-b: #00e5ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">💊</div>
+                    <div class="proj-label">COURSE</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-course">Course Project</span>
+                    <span class="proj-badge badge-web">Web App</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">UNIVERSITY — 04</div>
+                <h2 class="project-title">Pharmacy Management & Online Ordering System</h2>
+                <p class="project-subtitle">Web Application Development</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Traditional pharmacy systems relied on manual processes, leading to inefficient inventory
+                            tracking, poor customer record management, and lack of online ordering capabilities.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed a web-based pharmacy management system using Java EE (Jakarta EE), JSP, CSS, MySQL,
+                            and GlassFish 7, with inventory management, customer records, and secure session-based
+                            authentication.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Enhanced operational efficiency by enabling structured inventory monitoring, improving
+                            customer data management, and providing a secure online ordering platform.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Course Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Module</span>
+                        <span class="meta-val">Web Application Development</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Web Application</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Full Stack Developer</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Java EE</span>
+                    <span class="tech-badge">Jakarta EE</span>
+                    <span class="tech-badge">JSP</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">GlassFish 7</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/RadhCoder/Pharmacy-Management-Online-Ordering-System" target="_blank"
+                        class="btn btn-pink proj-link">GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- U5: WEDDING APP -->
+        <article class="project-card reveal" data-category="course" style="transition-delay:0.25s">
+            <div class="project-img" style="--grad-a: #ff2d78; --grad-b: #ffe600;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">💍</div>
+                    <div class="proj-label">COURSE</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-course">Course Project</span>
+                    <span class="proj-badge badge-mobile">Mobile App</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">UNIVERSITY — 05</div>
+                <h2 class="project-title">Wedding Package Booking App</h2>
+                <p class="project-subtitle">Mobile Application Development</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Wedding package booking lacked a centralized digital platform, making it difficult for users
+                            to compare packages, view pricing, and access detailed information efficiently.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed a mobile application using Flutter, SQLite, and Android Studio, allowing users to
+                            browse Malay, Chinese, and Indian wedding packages with guest capacity, pricing, and
+                            detailed service offerings.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Simplified the booking process with a user-friendly platform offering organized package
+                            information, improving accessibility, decision-making, and overall user experience.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Course Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Module</span>
+                        <span class="meta-val">Mobile Application Development</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Mobile Application</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Mobile Developer</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Dart</span>
+                    <span class="tech-badge">SQLite</span>
+                    <span class="tech-badge">Android Studio</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/RadhCoder/Wedding-Package-Booking-App" target="_blank"
+                        class="btn btn-pink proj-link">GitHub ↗</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- ─── SECTION HEADER: INTERNSHIP ─── -->
+        <div class="projects-section-header reveal">
+            <div class="section-divider">
+                <span class="section-divider-icon">💼</span>
+                <span class="section-divider-label">Internship Projects</span>
+                <span class="section-divider-count">5 projects</span>
+            </div>
+        </div>
+
+        <!-- I1: ASSET MANAGEMENT -->
+        <article class="project-card reveal" data-category="internship" style="transition-delay:0.05s">
+            <div class="project-img" style="--grad-a: #a259ff; --grad-b: #00e5ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">🏢</div>
+                    <div class="proj-label">INTERNSHIP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-internship">Internship</span>
+                    <span class="proj-badge badge-web">Web App</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">INTERNSHIP — 01</div>
+                <h2 class="project-title">Asset Management System</h2>
+                <p class="project-subtitle">Web Application Development</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Manual asset tracking caused inefficiencies, data inconsistencies, and difficulty monitoring
+                            organizational inventory, leading to reduced operational visibility and increased risk of
+                            asset mismanagement.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed a secure web-based Asset Management System using PHP, HTML, CSS, JavaScript, SQL,
+                            and Laravel, enabling centralized asset management, real-time monitoring, and secure
+                            tracking on an internal server.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Improved asset visibility, enhanced data accuracy, and streamlined inventory management,
+                            enabling more efficient and reliable asset tracking across the organization.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Internship Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Web Application</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Full Stack Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Environment</span>
+                        <span class="meta-val">Internal Server</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">SQL</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- I2: ISO FACIAL IMAGE -->
+        <article class="project-card reveal" data-category="internship" style="transition-delay:0.1s">
+            <div class="project-img" style="--grad-a: #ff6b00; --grad-b: #a259ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">👁️</div>
+                    <div class="proj-label">INTERNSHIP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-internship">Internship</span>
+                    <span class="proj-badge badge-ml">Python Automation</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">INTERNSHIP — 02</div>
+                <h2 class="project-title">ISO-Compliant Facial Image Metadata Automation</h2>
+                <p class="project-subtitle">Python Automation & Data Compliance</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Facial image validation required manual verification to ensure compliance with ISO/IEC
+                            29794-5 and ISO/IEC 19794-5 standards, which was time-consuming and prone to human error.
+                        </p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Engineered Python automation scripts using NumPy, Pandas, Matplotlib, and face_recognition to
+                            analyze facial image data, measure eye-distance accuracy, verify capture consistency, and
+                            generate ISO-aligned metadata.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Automated the validation process, significantly reduced manual effort, and ensured
+                            standardized, accurate, and reliable facial image compliance verification.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Internship Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Python Automation</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Standard</span>
+                        <span class="meta-val">ISO/IEC 29794-5 & 19794-5</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">Developer / Analyst</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Matplotlib</span>
+                    <span class="tech-badge">face_recognition</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- I3: FUNCTIONAL TESTING PLAYBOOK -->
+        <article class="project-card reveal" data-category="internship" style="transition-delay:0.15s">
+            <div class="project-img" style="--grad-a: #00ff88; --grad-b: #00e5ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">📋</div>
+                    <div class="proj-label">INTERNSHIP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-internship">Internship</span>
+                    <span class="proj-badge badge-qa">QA</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">INTERNSHIP — 03</div>
+                <h2 class="project-title">Functional Testing Playbook & Guidelines</h2>
+                <p class="project-subtitle">Software Testing & Quality Assurance Documentation</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Lack of standardized testing guidelines resulted in inconsistent test execution, unclear
+                            validation processes, and increased risk of requirement misinterpretation during product
+                            testing.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Authored a functional testing playbook defining structured testing workflows, validation
+                            criteria, and expected outcomes to guide teams in performing consistent and reliable
+                            functional testing.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Improved testing consistency, enhanced overall product quality, and enabled teams to perform
+                            more structured and reliable functional validation.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Internship Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Software Testing & QA</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Deliverable</span>
+                        <span class="meta-val">Testing Playbook</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">QA Engineer / Author</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Functional Testing</span>
+                    <span class="tech-badge">Test Planning</span>
+                    <span class="tech-badge">QA Documentation</span>
+                    <span class="tech-badge">JIRA</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- I4: URS/BRS/SRS/SDS -->
+        <article class="project-card reveal" data-category="internship" style="transition-delay:0.2s">
+            <div class="project-img" style="--grad-a: #ffe600; --grad-b: #ff6b00;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">📑</div>
+                    <div class="proj-label">INTERNSHIP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-internship">Internship</span>
+                    <span class="proj-badge badge-qa">QA</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">INTERNSHIP — 04</div>
+                <h2 class="project-title">URS, BRS, SRS & SDS Requirement Mapping</h2>
+                <p class="project-subtitle">Requirement Analysis & Quality Assurance</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Misalignment between vendor-provided requirements and business needs could lead to
+                            development errors, missing features, and costly rework.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Reviewed and verified requirement mappings across URS, BRS, SRS, and SDS documents to ensure
+                            requirement completeness, consistency, and alignment with business objectives.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Identified requirement gaps and inconsistencies early, reducing development risks, improving
+                            requirement clarity, and supporting smoother implementation.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Internship Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Requirement Analysis & QA</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Scope</span>
+                        <span class="meta-val">URS · BRS · SRS · SDS</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">QA Analyst</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Requirement Analysis</span>
+                    <span class="tech-badge">Gap Analysis</span>
+                    <span class="tech-badge">QA Documentation</span>
+                    <span class="tech-badge">JIRA</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- I5: UAT -->
+        <article class="project-card reveal" data-category="internship" style="transition-delay:0.25s">
+            <div class="project-img" style="--grad-a: #ff2d78; --grad-b: #00e5ff;">
+                <div class="project-img-inner">
+                    <div class="proj-icon">✅</div>
+                    <div class="proj-label">INTERNSHIP</div>
+                </div>
+                <div class="project-badges">
+                    <span class="proj-badge badge-internship">Internship</span>
+                    <span class="proj-badge badge-qa">QA</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <div class="project-number">INTERNSHIP — 05</div>
+                <h2 class="project-title">User Acceptance Testing (UAT) Documentation</h2>
+                <p class="project-subtitle">Software Testing & Validation</p>
+                <div class="project-isr">
+                    <div class="isr-item">
+                        <span class="isr-label">⚠️ Issue</span>
+                        <p>Unstructured or incomplete UAT documentation could lead to ineffective testing, undetected
+                            defects, and delays in system acceptance.</p>
+                    </div>
+                    <div class="isr-item">
+                        <span class="isr-label">💡 Solution</span>
+                        <p>Developed and maintained comprehensive UAT documentation including detailed test cases,
+                            expected results, acceptance criteria, and test result tracking to support systematic
+                            validation.</p>
+                    </div>
+                    <div class="isr-item isr-result">
+                        <span class="isr-label">✅ Result</span>
+                        <p>Enabled structured testing processes, improved defect identification, and supported smoother
+                            system acceptance and deployment.</p>
+                    </div>
+                </div>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-key">Type</span>
+                        <span class="meta-val">Internship Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Domain</span>
+                        <span class="meta-val">Software Testing & Validation</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">Deliverable</span>
+                        <span class="meta-val">UAT Test Cases & Reports</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-key">My Role</span>
+                        <span class="meta-val">QA Engineer / Tester</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">UAT</span>
+                    <span class="tech-badge">Test Case Design</span>
+                    <span class="tech-badge">Defect Tracking</span>
+                    <span class="tech-badge">QA Documentation</span>
+                    <span class="tech-badge">JIRA</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & built by <strong>Raudhatul Saadah</strong> · 2025</p>
+        <div class="footer-links">
+            <a href="https://github.com/RadhCoder" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/raudhatulsaadah" target="_blank">LinkedIn</a>
+            <a href="mailto:sraudhatul02@gmail.com">Email</a>
+        </div>
+    </footer>
+
+
+    <script src="js/global.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>
